@@ -34,7 +34,7 @@ jobs:
 
       - name: Clone GitOps Repo
         run: |
-          git clone https://x-access-token:${{ secrets.GITOPS_TOKEN }}@github.com/praveen0612/ecommerce-gitops.git
+          git clone https://x-access-token:${{ secrets.GITOPS_TOKEN }}@github.com/praveen0612/ecommerce-demo.git
 
       - name: Update Image Tags in Manifests
         run: |
