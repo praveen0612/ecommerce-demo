@@ -9,7 +9,7 @@ app.get("/", async (req, res) => {
     const response = await axios.get(`${BACKEND}/products`);
     const products = response.data;
 
-    let html = "<h1>🛒 E-Commerce Store</h1><ul>";
+    let html = "<h1>🔥 DevOps Demo Store</h1><ul>";
     products.forEach(p => {
       html += `<li>${p.name} - $${p.price}</li>`;
     });
