@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: praveen612/frontend:acb8923
+          image: praveen612/frontend:b31c5d8
           env:
             - name: BACKEND_URL
               value: http://backend:5000
