@@ -38,13 +38,13 @@ jobs:
 
       - name: Update Image Tags in Manifests
         run: |
-          cd ecommerce-gitops/k8s
+          cd ecommerce-demo/k8s
           sed -i "s|image: .*backend.*|image: ${{ secrets.DOCKER_USERNAME }}/backend:$TAG|" backend.yaml
           sed -i "s|image: .*frontend.*|image: ${{ secrets.DOCKER_USERNAME }}/frontend:$TAG|" frontend.yaml
 
       - name: Commit & Push Changes
         run: |
-          cd ecommerce-gitops
+          cd ecommerce-demo
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add .
