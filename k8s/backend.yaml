@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: praveen612/backend:6f99c6c
+          image: praveen612/backend:05fada7
           env:
             - name: MONGO_URI
               value: mongodb://mongo:27017/ecommerce
